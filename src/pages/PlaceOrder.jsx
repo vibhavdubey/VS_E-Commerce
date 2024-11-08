@@ -10,7 +10,7 @@ const PlaceOrder = () => {
   return (
     <div className="flex flex-col sm:flex-row justify-between gap-4 pt-5 sm:pt-14 min-h-[80vh] border-t">
       {/* left side  */}
-      <div className="flex flex-col gap-4 w-full sm:max-w-[480px]">
+      <div className="flex flex-col gap-4 w-full sm:max-w-[480px] shadow-2xl p-3 rounded-3xl bg-white">
         <div className="text-xl sm:text-2xl my-3">
           <Title text1={"DELIVERY"} text2={"INFORMATION"} />
         </div>
@@ -68,7 +68,7 @@ const PlaceOrder = () => {
       </div>
 
       {/* right side */}
-      <div className="mt-8">
+      <div className="mt-8 shadow-2xl p-3 rounded-3xl bg-white">
         <div className="mt-8 min-w-80">
           <CartTotal />
         </div>

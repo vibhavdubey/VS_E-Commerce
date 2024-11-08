@@ -30,7 +30,7 @@ const Cart = () => {
       <div className="text-2xl mb-3">
         <Title text1={"YOUR"} text2={"Cart"} />
       </div>
-      <div>
+      <div className="shadow-2xl p-3 rounded-3xl bg-white my-2">
         {cartData.map((item, index) => {
           const productData = products.find(
             (product) => product._id === item._id
@@ -40,7 +40,7 @@ const Cart = () => {
               key={index}
               className="py-4 border-t border-b text-gray-700 grid grid-cols-[4fr_0.5fr_0.5fr] sm:grid-cols-[4fr_2fr_0.5fr] items-center gap-4"
             >
-              <div className="flex items-start gap-6">
+              <div className="flex items-start gap-6 ">
                 <img
                   className="w-16 sm:w-20"
                   src={productData.image[0]}
@@ -85,8 +85,8 @@ const Cart = () => {
           );
         })}
       </div>
-      <div className="flex justify-end my-20">
-        <div className="w-full sm:w-[450px]">
+      <div className="flex justify-end my-20 ">
+        <div className="w-full sm:w-[450px] shadow-2xl p-3 rounded-3xl bg-white">
           <CartTotal />
           <div className="w-full text-end">
             <button

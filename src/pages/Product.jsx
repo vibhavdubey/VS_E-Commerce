@@ -31,7 +31,7 @@ const Product = () => {
   return productData ? (
     <div className="border-t-2 pt-10 transition-opacity ease-in duration-500 opacity-100">
       {/* product data */}
-      <div className="flex gap-12 sm:gap-12 flex-col sm:flex-row">
+      <div className="flex gap-12 sm:gap-12 flex-col sm:flex-row shadow-2xl max-sm:p-5">
         {/* product images */}
         <div className="flex-1 flex flex-col-reverse gap-3 sm:flex-row">
           <div className="flex sm:flex-col overflow-x-auto sm:overflow-y-scroll justify-between sm:justify-normal sm:w-[18.7%] w-full">
@@ -99,7 +99,7 @@ const Product = () => {
       </div>
 
       {/* Description and Review Section */}
-      <div className="mt-20">
+      <div className="mt-20 shadow-2xl">
         <div className="flex">
           <b className="border px-5 py-3 text-sm">Description</b>
           <p className="border px-5 py-3 text-sm">Reviews (122)</p>
