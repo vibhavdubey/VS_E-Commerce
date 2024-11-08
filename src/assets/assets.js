@@ -61,7 +61,7 @@ import contact_img from "./contact_img.png";
 import cross_icon from "./cross_icon.png";
 import dropdown_icon from "./dropdown_icon.png";
 import exchange_icon from "./exchange_icon.png";
-import hero_img from "./hero_img.jpg";
+import hero_img from "./hero_img.png";
 import logo from "./logo.png";
 import menu_icon from "./menu_icon.png";
 import profile_icon from "./profile_icon.png";

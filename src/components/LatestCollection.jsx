@@ -2,6 +2,7 @@ import { useContext, useEffect, useState } from "react";
 import { ShopContext } from "../context/ShopContext";
 import ProductItem from "./ProductItem";
 import Title from "./Title";
+import { motion } from "framer-motion"; // Import motion from framer-motion
 
 const LatestCollection = () => {
   const { products } = useContext(ShopContext);
@@ -25,13 +26,20 @@ const LatestCollection = () => {
       {/* rendering products */}
       <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-4 gap-y-6">
         {latestProducts.map((item, index) => (
-          <ProductItem
+          <motion.div
             key={index}
-            id={item._id}
-            image={item.image}
-            name={item.name}
-            price={item.price}
-          />
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6, delay: index * 0.2 }} // Delay creates a staggered effect
+          >
+            <ProductItem
+              key={index}
+              id={item._id}
+              image={item.image}
+              name={item.name}
+              price={item.price}
+            />
+          </motion.div>
         ))}
       </div>
     </div>

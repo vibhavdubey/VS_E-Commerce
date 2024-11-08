@@ -3,7 +3,7 @@ const NewsLetterBox = () => {
     event.preventDefault();
   };
   return (
-    <div className="text-center">
+    <div className="text-center shadow-xl py-5 rounded-xl bg-white ">
       <p className="text-2xl font-medium text-gray-800">
         Subscribe now & get 20% off
       </p>

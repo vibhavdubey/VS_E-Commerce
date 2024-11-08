@@ -8,7 +8,7 @@ const Navbar = () => {
 
   const { setShowSearch, getCartCount } = useContext(ShopContext);
   return (
-    <div className="flex items-center justify-between py-5 font-medium">
+    <div className="flex items-center justify-between py-5 px-2 rounded-xl shadow-gray-200 font-medium shadow-lg mb-10">
       <Link to="/">
         <img src={assets.logo} className="w-36" alt="" />
       </Link>
@@ -58,6 +58,7 @@ const Navbar = () => {
             </div>
           </div>
         </div>
+
         <Link to="/cart" className="relative">
           <img src={assets.cart_icon} className="w-5 min-w-5" alt="" />
           <p className="absolute right-[-5px] bottom-[-5px] w-4 text-center leading-4 bg-black text-white aspect-square rounded-full text-[8px]">
@@ -86,6 +87,7 @@ const Navbar = () => {
             <img src={assets.dropdown_icon} className="h-4 rotate-180" alt="" />
             <p>Back</p>
           </div>
+
           <NavLink
             onClick={() => setVisible(false)}
             className="py-2 pl-6 border"
@@ -93,6 +95,7 @@ const Navbar = () => {
           >
             HOME
           </NavLink>
+
           <NavLink
             onClick={() => setVisible(false)}
             className="py-2 pl-6 border"
@@ -100,6 +103,7 @@ const Navbar = () => {
           >
             COLLECTION
           </NavLink>
+
           <NavLink
             onClick={() => setVisible(false)}
             className="py-2 pl-6 border"
@@ -107,6 +111,7 @@ const Navbar = () => {
           >
             ABOUT
           </NavLink>
+
           <NavLink
             onClick={() => setVisible(false)}
             className="py-2 pl-6 border"

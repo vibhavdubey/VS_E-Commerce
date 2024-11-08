@@ -10,6 +10,10 @@ a.active hr {
 
 * {
   font-family: Outfit;
+  
+}
+body{
+  background: linear-gradient(to right, #4CC9FE, #86D293)
 }
 
 .prata-regular {

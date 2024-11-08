@@ -39,6 +39,7 @@ const ShopContextProvider = (props) => {
     }
     setCartItems(cartData);
   };
+
   const getCartCount = () => {
     let totalCount = 0;
     //this will iterate the product item.
