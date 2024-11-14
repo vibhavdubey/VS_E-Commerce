@@ -27,12 +27,15 @@ const Navbar = () => {
 
   return (
     <div className="flex items-center justify-between py-5 px-2 rounded-xl shadow-gray-200 font-medium shadow-lg mb-10">
-      <Link to="/">
+      <Link to="/VS_E-Commerce">
         <img src={assets.logo} className="w-36" alt="" />
       </Link>
 
       <ul className="hidden sm:flex gap-5 text-sm text-gray-700">
-        <NavLink to="/" className="flex flex-col items-center gap-1">
+        <NavLink
+          to="/VS_E-Commerce"
+          className="flex flex-col items-center gap-1"
+        >
           <p>HOME</p>
           <hr className="w-2/4 border-none h-[1.5px] bg-gray-700 hidden" />
         </NavLink>
@@ -131,7 +134,7 @@ const Navbar = () => {
           <NavLink
             onClick={() => setVisible(false)}
             className="py-2 pl-6 border"
-            to="/"
+            to="/VS_E-Commerce"
           >
             HOME
           </NavLink>
