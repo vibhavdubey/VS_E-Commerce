@@ -27,7 +27,7 @@ const Navbar = () => {
 
   return (
     <div className="flex items-center justify-between py-5 px-2 rounded-xl shadow-gray-200 font-medium shadow-lg mb-10">
-      <Link to="/VS_E-Commerce">
+      <Link to="/VS_E-Commerce/">
         <img src={assets.logo} className="w-36" alt="" />
       </Link>
 
@@ -39,15 +39,24 @@ const Navbar = () => {
           <p>HOME</p>
           <hr className="w-2/4 border-none h-[1.5px] bg-gray-700 hidden" />
         </NavLink>
-        <NavLink to="/collection" className="flex flex-col items-center gap-1">
+        <NavLink
+          to="/VS_E-Commerce/collection"
+          className="flex flex-col items-center gap-1"
+        >
           <p>COLLECTION</p>
           <hr className="w-2/4 border-none h-[1.5px] bg-gray-700 hidden" />
         </NavLink>
-        <NavLink to="/about" className="flex flex-col items-center gap-1 ">
+        <NavLink
+          to="/VS_E-Commerce/about"
+          className="flex flex-col items-center gap-1 "
+        >
           <p>ABOUT</p>
           <hr className="w-2/4 border-none h-[1.5px] bg-gray-700 hidden" />
         </NavLink>
-        <NavLink to="/contact" className="flex flex-col items-center gap-1">
+        <NavLink
+          to="/VS_E-Commerce/contact"
+          className="flex flex-col items-center gap-1"
+        >
           <p>CONTACT</p>
           <hr className="w-2/4 border-none h-[1.5px] bg-gray-700 hidden" />
         </NavLink>
@@ -79,7 +88,7 @@ const Navbar = () => {
         />
 
         <div className="group relative">
-          <Link to="/login">
+          <Link to="/VS_E-Commerce/login">
             <img
               src={assets.profile_icon}
               className="w-5 cursor-pointer"
@@ -93,7 +102,7 @@ const Navbar = () => {
               <p className="cursor-pointer hover:text-black">My Profile</p>
               <p
                 className="cursor-pointer hover:text-black"
-                onClick={() => navigate("/orders")}
+                onClick={() => navigate("/VS_E-Commerce/orders")}
               >
                 Orders
               </p>
@@ -102,7 +111,7 @@ const Navbar = () => {
           </div>
         </div>
 
-        <Link to="/cart" className="relative">
+        <Link to="/VS_E-Commerce/cart" className="relative">
           <img src={assets.cart_icon} className="w-5 min-w-5" alt="" />
           <p className="absolute right-[-5px] bottom-[-5px] w-4 text-center leading-4 bg-black text-white aspect-square rounded-full text-[8px]">
             {getCartCount()}
@@ -134,7 +143,7 @@ const Navbar = () => {
           <NavLink
             onClick={() => setVisible(false)}
             className="py-2 pl-6 border"
-            to="/VS_E-Commerce"
+            to="/VS_E-Commerce/"
           >
             HOME
           </NavLink>
@@ -142,7 +151,7 @@ const Navbar = () => {
           <NavLink
             onClick={() => setVisible(false)}
             className="py-2 pl-6 border"
-            to="/collection"
+            to="/VS_E-Commerce/collection"
           >
             COLLECTION
           </NavLink>
@@ -150,7 +159,7 @@ const Navbar = () => {
           <NavLink
             onClick={() => setVisible(false)}
             className="py-2 pl-6 border"
-            to="/about"
+            to="/VS_E-Commerce/about"
           >
             ABOUT
           </NavLink>
@@ -158,7 +167,7 @@ const Navbar = () => {
           <NavLink
             onClick={() => setVisible(false)}
             className="py-2 pl-6 border"
-            to="/contact"
+            to="/VS_E-Commerce/contact"
           >
             CONTACT
           </NavLink>

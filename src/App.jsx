@@ -21,15 +21,15 @@ const App = () => {
       <Navbar />
       <SearchBar />
       <Routes>
-        <Route path="/VS_E-Commerce" element={<Home />} />
-        <Route path="/collection" element={<Collection />} />
-        <Route path="/about" element={<About />} />
-        <Route path="/contact" element={<Contact />} />
-        <Route path="/product/:productId" element={<Product />} />
-        <Route path="/cart" element={<Cart />} />
-        <Route path="/login" element={<Login />} />
-        <Route path="/place-order" element={<PlaceOrder />} />
-        <Route path="/orders" element={<Orders />} />
+        <Route path="/VS_E-Commerce/" element={<Home />} />
+        <Route path="/VS_E-Commerce/collection" element={<Collection />} />
+        <Route path="/VS_E-Commerce/about" element={<About />} />
+        <Route path="/VS_E-Commerce/contact" element={<Contact />} />
+        <Route path="/VS_E-Commerce/product/:productId" element={<Product />} />
+        <Route path="/VS_E-Commerce/cart" element={<Cart />} />
+        <Route path="/VS_E-Commerce/login" element={<Login />} />
+        <Route path="/VS_E-Commerce/place-order" element={<PlaceOrder />} />
+        <Route path="/VS_E-Commerce/orders" element={<Orders />} />
       </Routes>
       <Footer />
     </div>
