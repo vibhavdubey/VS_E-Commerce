@@ -17,7 +17,7 @@ const Navbar = () => {
   };
   useEffect(() => {
     document.body.style.background = isLightTheme
-      ? "#FFFFFF"
+      ? "white"
       : "linear-gradient(to right, #4CC9FE, #86D293)";
 
     return () => {
